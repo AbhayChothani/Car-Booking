@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CAR BOOKING</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body  style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVuXGOqVmQzYPuw5cqHw7vU2A9cNqFQRg4YQ&usqp=CAU)">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-image: url('images/b1.jpg');background-size: 2000px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">CAR <span class="booking">BOOKING</span></a> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inquiry.html">Inquiry</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br/><br/><br/><br/>
+  <div class="container-fluid"><!--container-->
+
+    <form class="form-group"><!--form-->
+      <h1 class="text-center" style=" color: #fff; background-image: url('images/b3.jpg');font-size:50px;text-transform: uppercase;font-weight: bold;background-size: 2000px;letter-spacing: 2px;">CAR Booking Form</h1>
+      <br/>
+      <div id="form"><!--form-->
+        <h3 class="text-white">Booking Details</h3>
+
+        <div id="input"><!--input-->
+
+         <select  id="input-group" style="background: black;">
+          <option value="">From</option>
+          <option>Ahmedabad</option>
+          <option>Surat</option>
+          <option>Vadodara</option>
+          <option>Rajkot</option> <option>Bhavnagar</option>        <option>Jamnagar</option> <option>Junagadh</option> <option>Anand</option> <option>Navsari</option> <option>Morbi</option>
+          <option>Gandhinagar</option>
+          <option>Gandhidham</option> <option>Nadiad</option> <option>Surendranagar</option><option>Bharuchr</option> <option>Mehsana</option> <option>Daman</option> <option>Porbandar</option><option>other</option>
+
+        </select>
+        <select  id="input-group" style="background: black;">
+          <option value="">To</option>
+         <option>Ahmedabad</option>
+          <option>Surat</option>
+          <option>Vadodara</option>
+          <option>Rajkot</option> <option>Bhavnagar</option>        <option>Jamnagar</option> <option>Junagadh</option> <option>Anand</option> <option>Navsari</option> <option>Morbi</option>
+          <option>Gandhinagar</option>
+          <option>Gandhidham</option> <option>Nadiad</option> <option>Surendranagar</option><option>Bharuchr</option> <option>Mehsana</option> <option>Daman</option> <option>Porbandar</option><option>other</option>
+        </select>
+        <input type="Date" id="input-group" placeholder="Departure Date">
+        <input type="Time" id="input-group" placeholder="Departure Time">
+        <select  id="input-group" style="background: black;">
+          <option value="">Preffered Car</option>
+          <option value="">Economy</option>
+          <option value="">Standard</option>
+          <option value="">Lux</option>
+        </select>
+        <select  id="input-group" style="background: black;">
+          <option value="">Preffered Seating</option>
+          <option value="">Economy Class</option>
+          <option value="">Business Class</option>
+          <option value="">First Class</option>
+        </select>
+      </div><!--input-->
+
+      <div id="input2"><!--input2-->
+        <input type="number" id="input-group" placeholder="Adult">
+        <input type="number" id="input-group" placeholder="Children(2-11years)">
+        <input type="number" id="input-group" placeholder="infant(under 2years)">
+      </div><!--input2-->
+
+      <div id="input3"><!--input3-->
+        <span id="input-group" class="text-primary">Select Your Fare</span> 
+        <input type="radio" id="input-group" name="r">
+        <label class="text-white" for="input-group">One Way</label>
+        <input type="radio" id="input-group" name="r">
+        <label class="text-white" for="input-group">Round Trip</label>
+      </div><!--input3-->
+
+      <div id="input4"><!--input4-->
+        <input type="text" id="input-group" placeholder="Return Date">
+        <input type="text" id="input-group" placeholder="Return time">
+        <input type="text" id="input-group1" placeholder="Any Message">
+      </div><!--input4-->
+
+      <div id="input5"><!--input5-->
+        <h3 class="text-white">Personal Details</h3>
+      </div><!--input5-->
+
+      <div id="input6"><!--input6-->
+        <input type="text" id="input-group" placeholder="Full Name">
+        <input type="number" id="input-group" placeholder="Phone Number">
+        <input type="email" id="input-group1" placeholder="Email">
+      </div><!--input6-->
+      <button type="submit" class="btn btn-warning text-white">Submit Form</button>
+      <button type="reset" class="btn btn-primary">Clear Form</button>
+    </div><!--form-->
+    <hr/>
+  </form><!--form-->
+  <div class="row bg-image container-fluid">
+    <div  class="col-lg-3 col-md-6 col-sm-6 logo" style="text-align: center;color: white">
+      <div class ="logo">
+        <p class="font">300+</p>
+      </div class ="logo">
+      <div>
+        <p>Rides daily</p>
+      </div>
+    </div>
+
+    <div  class="col-lg-3 col-md-6 col-sm-6 logo" style="text-align: center;color: white">
+      <div class ="logo">
+        <p class="font">4,80,000+</p>
+      </div>
+      <div class ="logo">
+        <p>Happy hours</p>
+      </div>
+    </div>
+
+    <div  class="col-lg-3 col-md-6 col-sm-6 logo" style="text-align: center;color: white">
+      <div class ="logo">
+        <p class="font">36,00,000+</p>
+      </div>
+      <div class ="logo">
+        <p>KM Travelles</p>
+      </div>
+    </div>
+
+    <div  class="col-lg-3 col-md-6 col-sm-6 logo" style="text-align: center;color: white">
+
+      <div class ="logo">
+        <p class="font">150+</p>
+      </div>
+      <div class ="logo">
+        <p>Cars</p>
+      </div>
+    </div>
+  </div><br/>
+
+  <section id="faqs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <h1>FAQ's</h1>
+          <div class="accordion mt-5" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="clearfix mb-0">
+                 <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-control="collapseOne">How can I book cheap cabs online?<i class="fa fa-angle-down"></i></a> 
+               </h2>
+             </div>
+             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Goibibo helps you with online cab booking at the best prices, comparatively much lower than the local vendors. Also you can use promo codes and offers on the Goibibo website/ app on online cab booking to get extra discounts.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="clearfix mb-0">
+               <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-control="collapseTwo">What are the advantages of online taxi booking?<i class="fa fa-angle-down"></i></a> 
+             </h2>
+           </div>
+           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Online taxi booking not only helps you with best prices but also helps you with the convenience of paying through multiple payment options (like Debit Card, Credit Card, eWallets etc.). You can easily compare prices and choose various categories of cabs like Hatchback cars, Sedan and SUV.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="clearfix mb-0">
+             <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-control="collapseThree">Why you should book airport cabs form Goibibo?<i class="fa fa-angle-down"></i></a> 
+           </h2>
+         </div>
+         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            From Goibibo you can get confirmed cheap cabs of your choice and budget. Expert and verified drivers will be taken care of your ride. Easy interface of booking with different payment modes available at Goibibo and finally with no hidden charges, Goibibo is the best option for online taxi booking.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="clearfix mb-0">
+           <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-control="collapseFour">What are the best options available for airport transfer?<i class="fa fa-angle-down"></i></a> 
+         </h2>
+       </div>
+       <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+        <div class="card-body">
+          While booking cabs online through Goibibo, you can choose the car based on your requirement and preferences. You can book Hatchback like Indica, Swift, Sedan like Dzire, Etios and SUV like Innova, Ertiga.
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<h1 style="text-align: center;color: white;padding:20px;margin-top: 10px; background-color: #A1C87A;border:dashed;" class="container">Offers</h1>
+<div class="container">
+  <div class="row justify-container-fluid">
+    <div class="col-md-4">
+      <div class="card shadow" style="width: 20rem;">
+        <img class="card-img-top" src="images/o1.jpg" alt="Card image cap">
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow" style="width: 20rem;">
+        <img class="card-img-top" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSExMVFhUVGBgVFRgWFxgWGBUVFRcXFhcXGBgYHSggGB0lHRgVITEiJSkrLi4uGB8zODMsNygtLisBCgoKDg0OGBAQGjAmHSUtLS0tKy0tLS0tLS0uLi0tLS0tKy0vLy0tLS8tLS0tLS0tLy8tLS0tLS0tLS0tLS0tLf/AABEIAP4AxwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcBAgj/xABLEAACAQIDAwYGDwcEAgIDAAABAhEAAwQSIQUxQQYTIlFhcQcWMoGR0RQjQlJTVHKSoaKjscHS8BczNIKyw+EVYnOzk/EkwkRjg//EABoBAQADAQEBAAAAAAAAAAAAAAABAgQDBQb/xAAyEQACAQIEBAUDBAIDAQAAAAAAAQIDEQQSIVETFDFBM2FxodGBkfBCscHhFSIjUmIF/9oADAMBAAIRAxEAPwDWqKKKueecortFAcopriccEdbZBzP5ERrr0uOkDXXfwk6U7qWrA5RXaKgHK7RRQBXK7RQHKK7RQHK7RRQBRRRQBRRRQBRRRQBRRRQBRRRQBXlnA3kemvVM2wjEzI+n1VKS7lW32HL3AN5FMnxLE74r37DbrH0+qj2E3WPp9VXWVFG5M9WCrk5lUnTWBqFMj0HUU7pkMG3WPp9VOkaIDEZju139w41WVuxaLfc90UV5s3VYBlYMp3FSCD3Eb6qWPVFdooDlFcRwdQQeGhnWvVAcorzevKgzMwUdbEAa6DU17oScooozCYkTvjjHdQBRRNAoQdooooDlFdooScortJX7hEARLGBO4aEknr3bqECldpKzcJJVolY1G4g7j2cdK5QC1FFFQAopHFYgWwpIMF1SeouQqn5xUeekbm0UAbKc5S4lllXetxykKerR1Y9lCbDyoPaCqt4sArsxtBrb2iWMMIa1cjTLJbcQCDquppcbetRImJtgk6CLsZSGEht40B1nSnj49Bb50HMs5Rl3li2QIAfdZ4WDGu+KEq6K/fu3Ht5S90u9i9zyZYVbgTRQQvRgyFAPSGuu8uRcvLdyZioDWhbksS9sqmcwLZzGTcBOYZcqnQatLjFlVLXV5sCIJYNOYwBp7qYECZkQTTfE7ZtIFOYEMQJkAL7aloyDqCC40jhBgxQm/kRS4w2LD9K5pavFZDOedRnkbiZjKY7z11KbTbPZOXpgMguqupKK6m6sDU9GZXeRI40jtPGWGCs0sJCkc4yKFNy1bfnEkZgOcUkMp06pp4uPsgSGAGYrABzZyM5GSM2aDm3btd2tAMr1+1K830EJAuvbTLoFYorNl6ImdeGg0zU0NzEFLrC5dBt2s1roAZyLt8KzKV6RKLbldN8wCREwdpIOkSMhClHBzC4CCxyxqQBqTug798J7U2utnm1yPduXSRbt2spd8ozMwLMqqoEEsxA1HEig+gzxOHc3VQvdZVu22BmD0rdwMJUCRIB7Mx4QKbNirxtgq9znSh55Smlp9PJGXSG6IEnMsnpRmqU2Xtq1fECUuBmRrVyFuI6BSylZMwGUypIIYEGDSNnlRg2uPaXE2i1u0t9jzi5eaYFs2aYgKAx6gyniKDXYUwljLibktcM2rUZmJB6d7NHCR0d27N21HYHFZLgLWgz3LhLEIQ2GZoV1uNBJWAArbm03LBDxeVODNy1aXE2ma9m5vK6nMVOWN+8nQDiQRwrzi+V2CtpcY4qyeaVmdVuIzAIQpAUGScxCgcSQN9BrsGIwdw4i5cssEYrbtsWmCnT6Q0guhJInQyQYmQxwYNpGtlrttF542cqli7+yb++VJdsotkKfKzk67xKjb+HytcN60LQW2wuc6mUi6WC8ZElSBO/WJg12/wAocIiLcfFWFRxmRjdQB1JiVM6idJoNRheuYgKHYkTdy3BOVbdvIToyoxjOFGeDox1G8S+zGY2lLnMelrBEjMcu9VnSNYE7xvpLam1VsZBle49wlbVu2AXcgFjEkKAAJLMQBprqKRu8obFtUbEuuFZwSExD20eFMHc5UjdqCd4oR1JWiojA8pcNcuvY51FurcNsIzrnuQobMizJBBMfJPVXU5SYZmRbV1bxa6LJ5pkfm3KXHGeG6Ii2w46+eBFmS1ebtsMIPeNSCD1gjUV6rtSQJ2rQXQcdTJJJPaTqeFFe67QHKKKKgCONw4uW3tkxmUrI3gkaMO0GD5qj8LsbJctXC85FJuDLHOXjm9t39H97f018pfe1LUUJuRGC2Q1tUXOCEFjgQSbIynjuMDupy+zpR0zQWuc6pA8lhcFxNOMMBI40+ooLsiG2U5uc9NpbgykZUMOVkEvrJlSQPe75O6k7+xLjNznOIHLBz0CVBV8OwAGaYy2AJnexOm6puiguyExOxXducNxQ5ObySVBD4Zl0kFtMPrO8twiKX/0+5zvP505yCkZWyc2Qum+c2ZQc3VIjjUpRQXIx9mNzaorLmBZixDqc9wszMhRwUEsejJ00njSe1Nk3HexetXQt+wGUM6Z0uJcCi4rqrKRJRGBB0K8QSDL0UF2VYcmbysMQuItnFF7j3Ga0xtNzlpLWVbYuBlCrbtxLGYM79DD8kmtqbaXbbW2wdnCEXbReTY5zK5AcAqecaV36CCKtNFCczK3heT18NZd8QrFGvZgUc+1XlRSiM1wvmGQEM5byjwAFMDyLutbFl8RbyW8HfwNrLZKsEvLbVXc84QxAtiQAATJ0mrnRQZ2Va9yYvNeXE89bF5OYZfamNrPZt4i00rzmaGW+Y1lSoOu6uYfkiVF0tdVnvWcTaci3lUXMVc5xmVcxhRuyySYkmTVqooMzIfHbGdhh3tXVS9hwVVmQujqyBHV1DAwYUyDIIG/UGN2pybxN4Xj7IsB8TY9jXycOzKFVrpQ2gbsqYusDmJBIBgRFWqigUmVO3yTuhmU37fMviLeKKiyRdD2ebKqLmeILWlklZiQDrotsbk7essha9aZEZCqLauKqBEvITbDXmyEi4oyjoKFMLJkWaigzM7RRXKFQrtFFAN8bjbdlc911Rd0sY16h1mo7xpwfxhPreqq34UW1w44e2nzjm/WaohNb6OEjOCk2cpTadjX/ABpwfxhPreqjxpwfxhPreqsfzDrozDrrryMN2RxWbB404P4wn1vVR404P4wn1vVWP5h110GnIw3Y4rNf8acH8YT63qo8acH8YT63qrIKKcjDdjiM1/xpwfxhPreqjxpwfxhPreqsgmiacjDdjiM1/wAacH8YT63qo8acH8YT63qrIJomnIw3Y4jNf8acH8YT63qo8acH8YT63qrIKKcjDdjiM1/xpwfxhPreqjxpwfxhPreqsfzDrozDrpyMN2OKzYPGnB/GE+t6qPGnB/GE+t6qx/MOuuzTkYbscVmv+NOD+MJ9b1UeNOD+MJ9b1VkFBNORhuxxGa/404P4wn1vVR404P4wn1vVWP5h10Zh105GG7HFZsHjTg/jCfW9VdHKjB/GE+n1Vj2YdddBpyMN2OKzdlYEAggg6gjUEHiDXahORDTgbM9TjzC44A9AFFebOOWTWx2Tuiu+FHfhu67/AGqs/IHZFkYO0/NoXuAszMoJPSIAk8AOFVjwo78P3Xf7VW/kfiMmz7DEEgJrAkxmbWB1VqqN8tC2/wAlsOlxHcm/YFr4K38xfVR7AtfBW/mL6qjMHygRrVy80hVcKAYzEmIEAwSSwG/6NaRblZb1yoXjeFZJ+lqxu6djZGUWromfYFr4K38xfVVd5fbIsnB3X5tA9sBlZVAIMiRI4ETpTjC8r7NxxbGjZgDJBiTl1jdrpNK8tmnAYgj3n4ir0nJTj6lZ5XF+hiFXzwXbHs3jeuXUVyhVVDAMozAkmDoToKodaX4IvIxHyk+5q9XFtqk7GDDpOorlz/0bDfF7P/jT1UwQ7OJIC4WVknoW9w36xBqV2jYNy1cRTBZGUHqJBArMTsi/JHMvIbLu0zd+6N2u7Wvlsbja1BxyRvf1PpMDgqNdSzytb0/kv2Bw2BvTzdrDtG+LaSO8RSuK5PYW4pRsPagiNEVSO0ECQar3IrZvthvpcDoA1slQwBeVkITpcXf0hpK1da04WvWnBSqKz9TJiKdCM7UpZo7nztft5WZd+VivfBIq+eCnZtq4b110DMmRVzAELIYkgHjoNao2O/eXPlv/AFGtE8EPkYj5Sfc1fQYpvgv6HjYdLiovfsK38GnzR6qbXThlIVuZBLBADkBzkZgsdZGsVGcrto3BzeFsmLmIzKSVbo2spDMjAgBwSoHaRu31EXtjYSzfs2r6LcN8Mpu3CLjc6uQKhLAnUE6mBIEAbq8yFO6u2bpTs7JFwtYeywzKlsg7iApB84rzidl2bilHtIVYQRlH6FVXG4VtmOt60x9jEhLqNncIhaS1tAei0ngIMnTTW6qZE/4qklls09C0Xe6a1PnfFpkZ1HuWYD+UkfhW6bF2PYtWLaLbSMqySoJYkCSTxJrDdpfvLvy3/qNb9h7gWyrHQKgJ7gsmt2ObyxMmESvI9ewrfwafNHqqL2dtLCX7htIgzAMRmtFVYI2RijFYYBtNKbvyhvvbL2cDfJZc1osbIUyJQsOdzAbuE1Wdi4baFi8lw2LrqmZMuWwvtd1ucuQRd8rPBEzx3VmhSunmevqjRKpqrLT0ZoXsK38GnzR6qo/hT2ZaWwl5UVXFwJKgCVZWMGN+oFWXD7eJuJau4a9ZNwkIz82VZlUsV6DsQYBOo4VDeFb+DX/mX+l6UM0asbiq4ypyDkP/AANn+f8A7XorvIf+Bs/z/wDa9FUreJL1Zkj0RW/Cc0nD913+1Vm2HsgYrZmHtNcdAVkm2YJEuIMg6a7qrHhL34fuu/26vPIX+Aw/yP8A7NWmo7YeDW/yXoJSnJPYYtgLTW0z2luatvgHokAdKRpqdNe6oS7ijzzWl2WVtiJvSMpMAkQqEGCSN+sGp5+TmIDWguIV7YuO10XEJY2rmWUUhtCMuh7eNSj7AtElpuSf/wBjgeZQco9FZHP/AHud1S/4sttbFYw1oNvsBCDEGPxipTlVmOzrpkAc1qBxkrBmnWO2CwtOMO4F06o17NcUNpqRMxE6DjTblJh2t7Ke27ZmSwisw3My5QSO8ya6KeacfVFI0ckJXMZrS/BF5GI+Un3NWaVpfgi8jEfKT7mr0sZ4L+hmw3iI0EMPRv7Kitt8n7WKKly6lZUlGKl7beXaYjerQKisRyewzYgubWJzu5dyCebLGbeY6xGUAfJAkU0v8lsOtxWC4vSAAsEROc9IjMPK111ymZOteO4Ras/2PSlFSVmtC42ERALaBVCgAKIEKNBA4ClJqp4jkrhRkJt4g5VTySdVs5iquB5ejEQZ7IqW5O4C3ZRltpdQFiYu75/29S9lGlbQkxDHfvLny3/qNaJ4IfIxHyk+5qzvHfvLny3/AKjWieCHyMR8pPuavXxfgv6Hm4fxV9SV5StzONwuIaebINkktoHZg6gIdxORhI39Gd1UzbfI/Fvibz2bOdLlxriOr2wCHJcb2ERMeatX2jgUv22tXFlXUqd0jMCJE7jrvqvLyZxFsxZxjLbzCFdczKmXXpggs07p4Vio18q0evTW/wDBqq0cz8vIg9peyFwz4a+xe/exGWyDcBOVlRQA0nL7s9nnE6FYTKqrroANTmOgjUnee2obYnJtbLc7cdr14iC7ABR0swyJuThuqdrjVmpaI6U4tas+eNpfvLvy3/qNbvf/AIRv+E/0VhG0v3l35b/1Gt8SznsBJjNbyz1SsVsxvSH5sZsJ1l+bmfbS2ybWI2agvXUVbVg3FXySHgCRPSkAgyNBqNavWJwzFiQjHtGIuIN3vQYFQ9jZuMVUU4fAXDbVUDs9zMQggH9yY64k0rdweMYlmwuz2J3kvcJPeTYrPOztbt5r+jtG6vf9ju0bZW9gQQR/8h9C7XP/AMa97ptfNTDwrfwa/wDMv9L0/wANsvENdstct4a1bsu1wCwzsWdrbW4INtQBDEzruFMPCt/Br/zL/S9TT8WC/OrIn4c3+dDvIf8AgbP8/wD2vRRyH/gbP8//AGvRXKt4kvVmaPRFa8Je/D913+3Tzkjy6s2MOti8rzbkKyAMGUkkTqIImKZ+Evfh+67/AG6r2C9jHILjBR7vS4XzdP3vRyxk3a/TXoQpxnQipL7fUpGbjNtGj/tIwfVe+YPzUftIwfVe+YPzVnWPXCZHNtjnhcnlkE6ZpzKIO+dY3RTiMCSSWKiBCrzpk5jPSYe9jgPTJNeVpbM7cxU3Rff2kYPqvfMH5qheVvLuzfw72LKvNyAxcBQqyCY1MkxFVx/YOUQdQWJzc7qI0WQumukxpqdd1N8UuECPzbEtlGTNn3511jKBOTPMmN0TuEww9NSTsyJVptNXREVbuQPKe3gzcW8GyXMpDKJyssjUdRnh1VUadbPuqrHMAZVgJUN0o6MSDxrXVgpxcWZ6cnGSaNY/aFgffv8A+NvVR+0LA+/f/wAbeqs8Z8CoIKNml+iecED3Ey0+g60lfuYMK4RWzZCFLFj0ijCY0Ctng8RHbWJYSntI08xPdGkftCwPv3/8beqksT4RcGFJQ3HYDRchWT3nQVnzYnCQSUDHpZcoZAFNuFUxEtnB6WujbzGgzYKOijtECWLiYcBiQuigpqNdDOhEU5SntIcxPdENdcsSx3sST3kzVn5C8qFwTXFuKzJcgysFlZZ4EiQZ+iq5jQmc82ZQ6rv0ExBza8PQRuMgIGtsoRqRyvoZYycJXRrf7ScH7298xfzUftJwfvb3zF/NVDvYDCcLpGoEK1syCT0uk8bgBEg6yQBvQfD4ZH1YuoSTlYMS/PZSB5OvN69XHUVjWGovszVx6nkaH+0nB+9vfMX81J4nwl4YKSiXWaOiCqqCe05jAqh/6fhtIvHjPSQHQtG+Ac0KB72QTpTHaWHtpl5t84IMyVkQeIUkCe87qmOFot21IeIqJdhpdcsSTvYknvOprTtk+EewLSLeS4HVQrZQGUkCJHSG/qrL6DWmrRjUSUjhTqyhqjW/2k4P3t75i/mo/aTg/e3vmL+aqC+AwxdxzoVVICdJTzgLEEzmaNMupjfuEVz/AE3DHXnwNFEZ00YqxaT1AhdQDvgdmXlqPmaOPV8i/wD7ScH7298xfzVV+XPLC3jLaWrSMFDZ2ZwASQCAAATpqahcTgcMFdlvkkZiijLwzASSRMldwkw6nXWoaulLDUk8yvpuc6lebVma3yH/AIGz/P8A9r0Uch/4Gz/P/wBr1yvNreJL1ZMeiK34S9+H7rv9uoTBbeFtAnNDooUBnWHKtcJkGZZdN0AxrU34S9+H7rv9uqTXqUIqVGN/zVnFyak7Ezc2ynOI6WFQKXMLlBOdAqjNlno6nz0Ltm3BDYdXYhpdspYyQVJ6PDpDuI6qhqK7cOIzyJa5tZRct3UthCpLOEhM0tonREQECDdvzHjXp9rW2slDaXP0QGhNfa8rMWy5s2YB98knUmNYeinDiRnYU+wNq5ba3eFtmAPOLAJzC2wDbgYAOkmmNT+xsRibgItskJkQZx5AuQkrA0HRluwTrSbshBXYrh8ZcVchwl1jmDAFYkJmzTFsQZKAkDcADB1Kj7WJX+FaWAtrK9E3GcHKOjqCBqN7dlLYZMZJlEbPMGQOkzNlbQSYJMbvKpre9lXri2iLY51zdUmGWbYMZioIIHk7tSQOwZ7Rb7fc76pd/scxGOvPmC4c+UHlcrL0Mt0CUWHgLprMGNa7/rN1luc3h8gy5egSMvPAJbMRLbxHXpRhMXi7mWGAJYqqsHJEZUbNoYAzDVzMg91esKuMVw6okSCygplPMgW8ranychjjKsRMVNkuqX3Iu30b+xB4+0+ZrjWmth3YgFSqiSTlBIG7d5qa1L7Vv3QiW7qIBkXLl10QsEgqY6IZljXfrJ3RFaIO6OElZhRRRViAooooAroFcpbCX+bdXgEqZAO7MPJOnUYPmowLWrloWmRkY3S2hBiB0YE8DIf3JnN2AiS/1LDEuz2CBmhMqqIGctDQV1gxA4ATNeU5Rkb7Smc06kAlzmbhOrSTrO4TGh9rymOk2gYERmIHnAERGkR6TrXBqT7e51Tiu/sRu08RYbLzKFYzZpgSCRl3E675+jqplU54xtIPNiQXMg+/JiZUglQQFJ3CdNdIV2kk9ZJ00391dIX6Ne9ykrdUzWOQ/wDA2f5/+16KOQ/8DZ/n/wC16K8Wr4kvVnePRFb8JY1w5/5f7dUmtmx+At3lyXUDrvgzoesEag91Rnijg/gftLv5620cVGEFFpnOUG3cyyitT8UcH8D9pd/PSq8jsF8B9pd/PXXnaez9vkrw2ZPRWteJ2C+A+0u/nrnidgvgPtLv56jnqez9vknhsyalLV9l8lmWd+UkToRrHYSPOeutW8TsF8B9pd/PR4nYL4D7S7+enO09n7fI4bMuO0L27nrsbv3jbvTXPZ12Q3O3MwmDnaRO+DMidK1LxOwXwH2l389HidgvgPtLv56jnKWz9vkZJbmWJjLgmLjiTmMOwlt+Y66nQa9ld9nXZnnbk75ztOgYDj1Mw/mPWa1LxOwXwH2l389HidgvgPtLv56c5S2ft8jJLcym7fZ4zMzRoMxJgdQndSda14nYL4D7S7+ejxOwXwH2l389TztPZ+3yOGzJaK1rxNwXwH2l389HibgvgPtLv56c9T2ft8jhsyWita8TsD8B9pd/PXPE7BfAfaXfz056ns/b5HDZk1Faz4nYL4D7S7+ejxOwXwH2l389Oep7P2+Rw2ZNRWteJ2C+A+0u/npHE8mNnWxNxEQdbXri/e9Fjab7P8+pHDZldFX+/a2Km/Kfkvff+ljSKXNiz5J8/sgj766cx/4l9iMvmixciB/8Gz3P9NxyKKd7O2vhbgC2rtvQQFBCkAdSmDA7qK8qpdybaO66DmiivaW+uqkhbXjStFFQAortFQDldrldigCig1yaAK7XJomgO1yuFx1j00jcxtpfKuIO91H3mpsBeioy9yhwi78Ra8zBv6ZqMxPLrCL5Je58lCPpeKuqU30TIzIs1FZ9jfCG50tWVXtdi31REek1B4jbWNxJjnLhB9zbGRddADljjpqa7xwk+srJFc66I03aO2sPY/e3UU+9mW+asmqztDwgoNLNot/uc5R80ST6RVUw/J2+xjLl0kyRoNYnWBMGJI3V4/0/Cp/E7RsoeKWBzzA/LggHsyHvqyjhodXm9P6+S/Dqvtb1HOP5WYu7obpQdVvofSOl9NQlxiTLEkniTJPnNWu1tjYa6dH/APpbuXJ7fbLbfRpUhYxmx7ghbllf5bNv6LloVPOKGkIFlhb9ZFEHePSPp6qUt2GbRYbuIP3HWtCbkng7gBQ2wDuz4XCOvfpaX76jto8gmKNzdvDXDlOU2mu4Vw0HKQgfmmMx5WlV/wAhJ7fZ/JflI+fsU29YZfKUrO6QRMdU76Ki8c+0sH0cTauIv++2MhO6c6jKx85orTHFq2qOTwzvoz6GCgV2u1wnjXlg7SOKxKWlz3HVFHFiAPpqOxW0LjyMOFAG+7c8lRvkLxEayYB3jMKgbthC2ZibzRBuXdZ6wiHo217hP3VDlGPU6woykSGN5X21BNq09we/MWrfz3++Kqu2OXuLUSqW1BnLkhyQACTLGI6QGoHZOlT+AyKDlRRO/KAJ4cBvrmLwSMAHS2ykyJRYJ49x117+2uXMST0irfd/HsaVhod2ys8n9r4vHO+bEXltINWU5CSSIXoCN0n0ddHKDZ962ocYsupYAhnYsFMySc0aEqfSJkirK2Ftm0bKjm1M6INNdTpIjXtNRGO5N3SAMO1oROpQ3GJJkkKWHaNF41zeLr5tHZei/hHVYalbRe5Qb+Ov50AKtbZmUXGzKjBQTnBZpCgCTInTQGQKXv3LiyehA1k5hmBIjKDr6Y4aairriuT3O3Ee+zObcFFhbaoxEGEiT5yYnSo87Jz3IdGVUBUSsAS2bMo3HjqZPHtNl/8ARqr9QeDp7EDhEuOQCuWTGvV1xwEa+cVKDBWDmC3yzKOkAnH06DQ61OewrKDNlliIzSpMCT0s28DTTj28O7DwiYe3lRYYt0swEgtMuGiS0cdI3QJMx/kcQ3pL2XwOTpf9f3GGG5Kc4JF0DXLDpDaGJjNoI11jfXMTyXyT7apIBJAUDQTJ1bsqTfE20hAxzSCWUhmzHcCxBjUjUD0U0tY2zz0YgFxuCgyAw1zHrkgCJGscDU/5HEvpP2XwRydBfp938kVgNmi6WCi60TEKNTAIA7SDT3D7FXPkdLoiC5JEKvygMvoJ46aVNYrb9tkhEyruAQwQeOqnQRFR208fZW0vO3USTmAuNlzgiNz6uN2o6hVZY7ES0zP6f0THDUV+lCVnBot18qAjLmCnKSoVcxAJjXeNYmR2S62rtb2Ei88VzsJt2LUy40yksxIRV1BZgdZABNNsdtk4RC0HnrpIsqQBmA1LMAJFsCZ1BJMCDqtTwOAa+5uXGJmMzaAtAgKoGiqBAAAgAAAdV6MJVFnqP7latRU/9YoWu4rFY9iG8if3aSlhN3lcbjRGrSe6mu37K4O2FzLzj6gKoCoo3t19g3ceqrdbuJZtk6KiAkxuCgSTWZ4zGtib7XW4mQPeqNEX7u+D11sjLstEZLZndjrZmHZiqL5dwgd07gewCSfPVuucjLZH7x83EkLE9YESPTUbyQtgO148OgnefKb0QPOat6YsVEpPoiO5Ur+w8Rgla9ZxJVUGZsrMhMcCuoed0E60/wBh+Em6kDELnHv7cK4710Vvq0x5d7Vkph1Og9tueb92vplo7FqJ5EENfYMqsvNv5QB90q7j3mq2utTpFtI3LYnKe3iEzWnFxfdD3S9jKdR5/NRWU7R2K1s89gma3cGkK+Uwd+VifoJ/AUVy4S7M6Kobg7gCTuFROKc3ATd6Foa5DozCdGub8oPBdT1AEaetobUVFLkwg0DDUs3VbB8o/wC49EduoFO2ltlrp16KjyVkmOEk+6btP+KpKo3pEUqFtZEltHa2boL0UG5RpPGWA48d57STrUb7OqIxOKA3kyaSs3ZBNVyHe5P2MVHGn2F2iNVYSh8oDeI3MvUw/wAVVluzpXVuRuM9/rplIuWrFA24M5kbVHG5h+BHEHdSa4qmOx9sgTbuDNbbyl4g+/XqYfTuPYptXBG1lZWz2n1RxuI6j1MOrsqHElMk02kw0Oo6mGYead3mpUYm0wgq1vttkx80n8argxJr2uJqrhfqSpW6E+uz51tXEc9RAD9vAH0A1DbbtnIVcXbc6HICzMePtcZzx4V4W/208tbXcDKSGX3rgMPQd3mrm6MS/EfcisJglRBkOpOq3Oiw3gmIhd86++NNmw0XWutbBENrrl3HdGn/AKqwXLmHu+UjIeu2QR3ZHkAd1LbM5NB5KXl5qYYqrIRxy5DIJ7ZA1mKo6MuzLZ4lT2ZtJWFxVQzbV7ikAyHCBlCjfIMacfPURyxwOFu4W3i1Uc4BZllOt1WKKRcPumg+UdZGpO6tgtbOwlrVAoYac43SfXfqd24buqoHa/JnDXnJ5tHZz0nygO3ew1J4a1opQymWq7tWMrsbWXG4i7fZ5MBVU6FU0Jyjgvkrx8mTqdZyxdgADcN1T9nwe4bDu2W2yzp5bnTfEkndUtheR+HO/ONJ8s/j5vTWrOrHCUG2ZxytxxFoWgdbh1+Suv3x6DVawluFmNWOn3L+J89bPiuQGFuHMwc6QOnw17O00mng7wgiOcEbumNPStSqkUTlaViiYXoKFHAfTxPpp2mMjUmAN9XVuQ1j3135y/kpG9yEslSpuXoIIOtrcd+vNTUZ0V4bMhe8bpuXm33CW7l3KPMoFOeSTFXc/wC0fSxP4VotzwdYUD95iIA4MnmA9r81Ir4NMN8LfB4wyR2+43TVs6sWyldxm0bzFbOGUvfeSqjWFXViZMDdGvqrtaFyc5JW8KDzNt2ZtGuNqzAblkABQOoAUVVz2CgV/aePe42e40ngBuUcAo4D9dtR1zE/4pC7emki1cYxNTZ6mTr9NLKabhor0Gq9ig4mKJ6jXjNpSL3Y4/5pYDu3cirBsPbAQG1dGey/lr70+/XqI/XCqgLg3z5v80tYvUcRcte2tkGzDoc9l/IcdW+DG5t/fHeBFTUnyd25zYNq707L6Mp9zPul9Go841FKbf2HzUXbZz2Wgqw1idwY+fRvxqnkSRIvUqtymjD014Dkb6mwuSAb/Fetn8trXOjCZ9VlVEQrEE5obi0ht++NJ0pphr8Mp6iD3wQay+xhGuWWvTNxYctmOdRrlKqOC5SSZnQ8BNFEhs3/ABIDoeoiolMETuHf2U35MbU57DJc98skdTbmHmYEeapSxdjXr39tQVPCYe4NzMO5v80ndfECDzrwN46JDHrJIniePGpNHBjs9I83HvFduERuG9RI190P8/rWouBquOvjjPmH4Uou1bw9yD5j66XBTiCfNH415hP9w74P4UuDvjDdUTzQbsjf6R+NOb3KbmwrXLUhpy82vOHNGkgMYHeR301FgGK6cGtBce2+VqloK7gDu4mR+B9NPE5VWv1pULYwQMtHlGfNED1+c16fADq41NhmZYrW37R90P156KrLbPFFLDMzM8364V5Ary3f2+avWfT09n/uuiRa53LXsHWkELHrApUdtSQL8KSbWlAD2frhpSN4kbtf1NQBNlE8ZrknqM10XQd+/wC6vIUnUQZ/XXViB5hsXGhq3cm+UAtjmrvSsvvESUneQI8k8R/kGkT+v8mnOFu8D5t3fFVlG5KZb9v7CNr2y2M1o6yNQAdxB1lTO/hMa6Fq83bVh5M7fCe0Xv3TE5Tp7WTOvEZTxB01OhE0ryj5Nm37ZbE2zvA1ydo45funiNTRO2jLFYUR+o/9VU7AFmzccQcqLbKgGWBuEbuPlOh70Puqtmsjf+h3VXMBhxbvm4zb2cC3lDJmgqHYnT3DtAGgUEnVVayKslvB1fi1cskybV108x1n5xeraMQRWe8iMUVx2IttEvLnKZUsrmcvYc5I7BV0xl7LwqH1KkvaxY7qdc/MTrqNePp9dVi3iz1U6TEcdxGvo1P0VFgWPOO36D6q7mHWPOI+6ou3im76cJfB4RUWBJYcx+uBpxcWTl4bz3cB5/wNRtm9GpOg1M7gOJo/1IKNdM2oB3xwAG/dGnfSwJYGh0DCCJ/X0VEptddx0+g+g09s4kHdUkCvsQcGcfzFv681Fe1uUUJMby9817k+rr+6kEf1eeDrXu00mPw0rqSe54ddKidNP/X6ikgfTu9FKWwYnvqCRZfR+vVXl4P681ebep+n6J89FxtR+uqgGzqK4ojt6zrXu4eH3Ab+PppO516ejz1JB1iT3b66BG7SP15t9ILe1Hb66WS7Pm/GaAfWsaFEsYAEknQadtS2wPCdasjmri3Llv3DABcnYc5nL5tJ6t1R2lh+ctsoMHQjvGsHsqrIaq4pkpmh7b2+hYvZsZVO9S/k9qwvk9nDu3QGCxouXs0BVAuSJnW7zcsSexWH8vbTPZeIJGQ8BKnqHVTHbeDI6SHLIggEgEHeO6i0D1GWydo81ikuT0Zg8Oi0rP0g+atZw+1LYjnhNtvJug51E7hcUzl71jdWIMNaWsYq4nkuw7mI+igaN3xGzVjPbYZTuMyvzvc+f000NsqYYEd9UDkpyxvWnVJ1YgCIykz7pd3XqPQa1TYuLt4tSAmRgSGHlJI3kDeN/COs0KNDPDXTA4/40p/Zuik7uz4L5TGWMwOo1HA8d3EUghqNASmYMAOE69y9L8APPVC5b8qrthjbsMFacrPAYsynpgTuRSco4kye+9bNOpPUD961iPKYO2IClgScoGkAZiW11MmW1PGi6lkL4PlxjkOt0XAdCtxFIPzQD9NXzkxy2s32Ftos3TAClptuepG9yeyOOmY1QEw1hIUoWPFjxPdOlNtp7LUKXTSNSDqPNVspF0fQOGx43MGB7p/pmis98GnKO5iVaxdlnsqGW4d7W5y5X62BI14jf2lUsQf/2Q==" alt="Card image cap">
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow" style="width: 20rem;">
+        <img class="card-img-top" src="images/o2.jpg" alt="Card image cap">
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--container-->
+</br>
+<footer>
+  <div class="container">
+    <div class="sec aboutus">
+      <h2>About Us</h2>
+      <p>Far far away, behind the word<br/>mountains, far from the <br/>countries Vokalia and <br/>Consonantia, there live the <br/>
+      blind texts.</p>
+      <ul class="sci">
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+      </ul> 
+    </div>
+    <div class="sec quicklinks">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="inquiry.html">INQUIRY</a></li>
+      </ul>
+    </div>
+    <div class="sec contact">
+      <h2>Contact Info</h2>
+      <ul class="info">
+        <li>
+          <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+          <span>647 Linda street<br>
+            phoenixville, PA 19460,<br>USA</span>
+          </li>
+          <li>
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <p><a href="tel:12345678900">+1 1 234 567 8900</a><br>
+              <a href="tel:12345678900">+1 1 234 567 8900</a></p>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <p><a href="maioto:knowmore@email.com">knowmore@email.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrightText">
+      <p> Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021 Car booking. All Right Reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+  </body>
+  </html>
